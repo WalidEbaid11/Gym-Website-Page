@@ -1,5 +1,6 @@
 # Sprints-Tasks-HTML,CSS
 ![Gym-Website-Page](https://drive.google.com/file/d/1P_pi00UM0DDBmpS_I-ItzggYsKHgEHCP/view?usp=sharing)
+![Gym-Website-Page](https://drive.google.com/file/d/1i3Fx-2F3D-Apua6pRcl665OtJvBEaod0/view?usp=sharing)
 # FitNess Gym - Integrated Web Presence for Fitness Services Capstone Project
 
 Welcome to the FitNess Gym repository! This project is designed to create an integrated web presence for fitness services, focusing on user-friendly navigation, comprehensive service descriptions, and an aesthetically pleasing interface.
