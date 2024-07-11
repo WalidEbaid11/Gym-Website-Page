@@ -1,93 +1,149 @@
 /* style.css */
+<span style="font-family: verdana, geneva, sans-serif;">
+/* Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+/* Header */
+.header .navbar a {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: #baa6cf;
 }
 
 body {
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
+    background: #000;
 }
+
+.btn {
+    margin-top: 2rem;
+    width: 150px;
+    padding: 12px;
+    color: #fff;
+    background: tomato;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(212, 48, 48, 0.76);
+    transition: 0.4s;
+}
+
 /* Header */
 .header {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 0;
     position: fixed;
-    width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    padding: 1.5rem 8%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
 }
 
 .header .logo {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    font-size: 22px;
+    font-weight: bolder;
     color: #fff;
+    padding-right: 10px;
+    margin-right: 20rem;
+    text-decoration: none;
 }
 
-.header .navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 1rem;
+.header .logo i {
+    color: #fff;
+    padding: 0.5rem;
 }
 
 .header .navbar a {
+    font-size: 1.1rem;
+    margin: 0 1rem;
     color: #fff;
-    text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    transition: background 0.3s;
 }
 
-.header .navbar a:hover,
-.header .navbar a.btn {
-    background: #555;
+.header .navbar a:hover {
+    color: #baa6cf;
 }
 
+.header .btn {
+    background: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+    font-size: 12px;
+    padding: 8px;
+}
 .header .navbar a.btn {
     background: #ff6f61;
     color: #fff;
     border-radius: 5px;
 }
 /* Home Section */
-.home {
-    padding: 5rem 0;
-    text-align: center;
-    background: url('images/bg.jpg') no-repeat center center/cover;
-    color: #fff;
-}
-
-.home-content {
-    max-width: 700px;
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
     margin: auto;
 }
 
+section {
+    padding: 50px 0 50px 0;
+}
+
+.home {
+    display: flex;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.home .home-content {
+    width: 50%;
+    padding: 2rem;
+}
+
 .home h3 {
-    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 6rem;
+    font-size: 5rem;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .home p {
-    margin: 1.5rem 0;
+    color: rgb(194, 191, 191);
+    margin-top: 1rem;
+    font-size: 12px;
 }
 
-.home .btn {
-    padding: 0.75rem 2rem;
-    background: #ff6f61;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+.home .home-image {
+    width: 50%;
 }
 
-.home .btn:hover {
-    background: #ff4b3a;
+.home .home-image img {
+    width: 100%;
+    height: 100%;
 }
 
+</span>
 /* About Section */
 .about,
 .services,
