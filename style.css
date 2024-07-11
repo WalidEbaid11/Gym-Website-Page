@@ -145,147 +145,228 @@ section {
 
 </span>
 /* About Section */
-.about,
-.services,
-.contact,
-.pricing {
-    padding: 4rem 0;
+.about {
+    background: #111;
+    color: #fff;
+}
+
+.about .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     text-align: center;
-    background: #fff;
+    color: tomato;
 }
 
-.about .title,
-.services .title,
-.contact .title,
-.pricing .title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.about-content,
-.services-content,
-.contact-content,
-.pricing-content {
-    max-width: 700px;
-    margin: auto;
-}
-
-.about p,
-.services p,
-.contact p,
-.pricing p {
-    margin-bottom: 1.5rem;
+.about .about-content p {
+    margin: 1rem 0;
+    line-height: 1.8;
+    color: rgb(194, 191, 191);
+    width: 70%;
+    font-size: 1rem;
 }
 
 /* Services Section */
-.services-content {
+.services {
+    background: #000;
+    color: #fff;
+}
+
+.services .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: tomato;
+}
+
+.services .services-content {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.service {
-    max-width: 250px;
-    margin: 1rem 0;
+.services .service {
+    background: #111;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 25%;
+    margin: 1rem;
+    transition: transform 0.3s;
 }
 
-.service i {
-    font-size: 2rem;
+.services .service:hover {
+    transform: translateY(-10px);
+}
+
+.services .service i {
+    font-size: 3rem;
+    color: tomato;
     margin-bottom: 1rem;
-    color: #ff6f61;
 }
 
-.service h3 {
+.services .service h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.services .service p {
+    font-size: 1rem;
+    color: rgb(194, 191, 191);
 }
 
 /* Contact Section */
-.contact-form {
-    display: grid;
-    gap: 1rem;
+.contact {
+    background: #111;
+    color: #fff;
 }
 
-.input-field input,
-.input-field textarea {
+.contact .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: tomato;
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-form {
+    width: 50%;
+    background: #000;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.contact .contact-form .input-field {
+    margin: 1rem 0;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #fff;
+    background: #111;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
-.input-field textarea {
-    resize: none;
-    height: 150px;
-}
-
-.contact .btn {
-    padding: 0.75rem 2rem;
-    background: #ff6f61;
+.contact .contact-form button {
+    background: tomato;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
-.contact .btn:hover {
-    background: #ff4b3a;
+.contact .contact-form button:hover {
+    background: rgba(212, 48, 48, 0.76);
 }
 
 /* Pricing Section */
-.pricing-content {
+.pricing {
+    background: #000;
+    color: #fff;
+}
+
+.pricing .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: tomato;
+}
+
+.pricing .pricing-content {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
-.plan {
-    max-width: 250px;
-    margin: 1rem 0;
+.pricing .plan {
+    background: #111;
+    border-radius: 10px;
     padding: 2rem;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 25%;
+    margin: 1rem;
+    transition: transform 0.3s;
 }
 
-.plan h3 {
+.pricing .plan:hover {
+    transform: translateY(-10px);
+}
+
+.pricing .plan h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.plan span {
-    display: block;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #ff6f61;
+.pricing .plan p {
+    font-size: 1rem;
+    color: rgb(194, 191, 191);
+    margin-bottom: 1rem;
+}
+
+.pricing .plan span {
+    font-size: 1.2rem;
+    color: tomato;
 }
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #111;
     color: #fff;
     padding: 2rem 0;
-    text-align: center;
+}
+
+.footer .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer .footer-logo {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.footer .footer-logo i {
+    color: tomato;
+    margin-right: 10px;
 }
 
 .footer .social-icons {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 .footer .social-icons li {
-    margin: 0 0.5rem;
+    margin: 0 10px;
 }
 
-.footer .social-icons li a {
+.footer .social-icons a {
     color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .footer .footer-text {
+    text-align: center;
     margin-top: 1rem;
+    color: rgb(194, 191, 191);
+    font-size: 0.9rem;
 }
