@@ -20,7 +20,7 @@ FitNess Gym is a comprehensive website designed to offer a seamless online prese
 ## Features
 
 - **Responsive Design**: Ensures the website looks great on all devices.
-- **Service Listings**: Detailed descriptions of the fitness services offered.
+- **Service Listings**: Detailed descriptions of the fitness services offered. 
 - **Contact Form**: Allows visitors to easily get in touch with the gym.
 - **Pricing Plans**: Clearly displayed pricing options for different membership plans.
 - **Social Media Integration**: Links to social media profiles for broader reach.
